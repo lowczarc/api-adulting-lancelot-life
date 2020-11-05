@@ -1,0 +1,66 @@
+body {
+	font-size: 1.1em;
+}
+
+h1 {
+	text-align: center;
+	background: #cceeff;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+
+h3 {
+	margin: 5px 0;
+}
+
+p { 
+	margin: 0px;
+	line-height: 1.5;
+}
+
+.sender, .receiver {
+	margin: 20px;
+}
+
+.receiver {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100%;
+}
+
+.receiver > * {
+	margin-left: auto;
+	width: 300px;
+}
+
+.number, .date, .bank {
+	margin: 20px 0;
+}
+
+table {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 100%;
+	empty-cells: hide;
+	border-spacing: 0;
+}
+
+th {
+	background: #cceeff;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+.right {
+	text-align: right;
+	margin-bottom: 50px;
+}
+
+.little-conditions {
+	font-size: 0.9em;
+	color: #888;
+}
