@@ -125,7 +125,7 @@ def bill_get_pdf(bill_id):
 
   pdf_path = os.getenv('PDF_TMP_DIR') + '/' + str(uuid.uuid1()) + '.pdf'
 
-  command = "cd pdf_generator && sh generate_pdf.sh {} {}".format(bill_id, pdf_path)
+  command = "cd /tmp && sh $PDF_GENERATOR/generate_pdf.sh {} {}".format(bill_id, pdf_path)
   subprocess.check_call(command, shell=True)
 
   pdf = open(pdf_path, 'rb')
